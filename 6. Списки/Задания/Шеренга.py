@@ -1,8 +1,8 @@
 all = list(map(int, input().split()))
 a = int(input())
-c = 0
+n = 0
 for num in range(len(all)):
-    c += 1
+    n += 1
     if all[num]<a:
         break
-print(c+1)
+print(num + 2)
