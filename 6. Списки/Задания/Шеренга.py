@@ -1,8 +1,8 @@
 all = list(map(int, input().split()))
 a = int(input())
+c = 0
 for num in range(len(all)):
+    c += 1
     if all[num]<a:
-        print(num + 1)
         break
-    elif all[num] == a:
-       num +=1
+print(c+1)
