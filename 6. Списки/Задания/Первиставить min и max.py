@@ -1,9 +1,11 @@
-v = list(map(int, input().split()))
+nums = list(map(int, input().split()))
 max = 0
-min = 99999999999999999999999
-for num in range(len(v)):
-    if v[num] > max:
-        max = num
-    if v[num]< min:
-        min = num
-print(max)
+min = 0
+a = 0
+for i in range(len(nums)):
+    if nums[i] > nums[max] :
+        max = i
+    if nums[i] < nums[min] :
+        min = i
+nums[max], nums[min] = nums[min], nums[max]
+print(*nums)
