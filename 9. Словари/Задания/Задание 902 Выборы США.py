@@ -5,4 +5,4 @@ for i in range(n):
     points = int(points)
     d[name] = d.get(name, 0) + points
 for key in d:
-    print   (f'{key} - {d[key]}')
+    print (f'{key} - {d[key]}')
