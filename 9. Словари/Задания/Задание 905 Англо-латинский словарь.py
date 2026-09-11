@@ -4,7 +4,13 @@ for i in range(n):
     a,b = input().split(" - ")
     b= b.split(", ")
     for elem in b:
-        d[elem]= a
+        if elem in d:
+            d[elem].append(a)
+        else:
+            d[elem] = [a]
+
 print(len(d))
-for key in d:
-    print   (f'{key} - {d[key]}')
+for key in sorted(d.keys()):
+    print(f'{key} - {", ".join(sorted(d[key]))}')
+
+
