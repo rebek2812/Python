@@ -12,7 +12,7 @@ def once(func):
 @once
 def connect():
     print("Подключение установлено!")
-    return "connected"
+    return  "connected"
 
 connect()  # "Подключение установлено!" → "connected"
 connect()  # "connected"
